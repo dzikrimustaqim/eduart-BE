@@ -1,4 +1,4 @@
-runtime: nodejs14
+runtime: nodejs16
 
 env_variables:
   JWT_SECRET: "3jk4b324b23k3j32b"
