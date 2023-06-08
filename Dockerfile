@@ -4,7 +4,7 @@ FROM node:16
 WORKDIR /src/app
 
 # Menyalin package.json dan package-lock.json ke direktori kerja
-COPY package.json ./
+COPY package*.json ./
 
 # Menginstal dependensi aplikasi
 RUN npm install
@@ -12,4 +12,4 @@ RUN npm install
 COPY . .
 
 # Menjalankan aplikasi ketika container dijalankan
-CMD [ "node", "app.js", "0.0.0.0:8000" ]
+CMD [ "node", "app.js" ]
